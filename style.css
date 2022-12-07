@@ -1,16 +1,16 @@
 * {
-    margin : 0;
-    padding : 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     display: grid;
     place-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1 {
-    margin : 10px;
+    margin: 10px;
 }
 
 ul {
@@ -18,7 +18,7 @@ ul {
     grid-template-columns: 1fr;
 }
 
-.ctable {
+.divv {
     display: flex;
 }
 
@@ -35,11 +35,11 @@ li {
     height: 75px;
 }
 
-#indicator {
+#tog {
     margin: 10px 0px;
 }
 
-/* Don't know what this does */
+
 
 .allimg {
     width: 45px;

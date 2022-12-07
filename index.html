@@ -1,99 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jahid Khan">
     <link rel="stylesheet" href="style.css">
-    <title>Chess - A small project</title>
+    
+    <title>Chess</title>
 </head>
+
+
 <body>
 
-<h1>Chess</h1>
-<h2 id="indicator">White's Turn</h2>
+    <!-- <h1>Chess <h4>(Made by : Jahid Khan)</h4></h1> -->
+    <h1>Chess</h1>
+    <h5>-by Jahid Khan</h5>
+    <h2 id="tog">White's Turn</h2>
+
+
     
     <ul>
-        <div class="ctable" id="r8">
-            <li class = "box" id="r8c1">Brook</li>
-            <li class = "box" id="r8c2">Bknight</li>
-            <li class = "box" id="r8c3">Bbishop</li>
-            <li class = "box" id="r8c4">Bqueen</li>
-            <li class = "box" id="r8c5">Bking</li>
-            <li class = "box" id="r8c6">Bbishop</li>
-            <li class = "box" id="r8c7">Bknight</li>
-            <li class = "box" id="r8c8">Brook</li>
+
+        <div class="divv" id="row8">
+            <li class="box" id="b801">Brook</li>
+            <li class="box" id="b802">Bknight</li>
+            <li class="box" id="b803">Bbishop</li>
+            <li class="box" id="b804">Bqueen</li>
+            <li class="box" id="b805">Bking</li>
+            <li class="box" id="b806">Bbishop</li>
+            <li class="box" id="b807">Bknight</li>
+            <li class="box" id="b808">Brook</li>
         </div>
-        <div class="ctable" id="r7">
-            <li class = "box" id="r7c1">Bpawn</li>
-            <li class = "box" id="r7c2">Bpawn</li>
-            <li class = "box" id="r7c3">Bpawn</li>
-            <li class = "box" id="r7c4">Bpawn</li>
-            <li class = "box" id="r7c5">Bpawn</li>
-            <li class = "box" id="r7c6">Bpawn</li>
-            <li class = "box" id="r7c7">Bpawn</li>
-            <li class = "box" id="r7c8">Bpawn</li>
+        <div class="divv" id="row7">
+            <li class="box" id="b701">Bpawn</li>
+            <li class="box" id="b702">Bpawn</li>
+            <li class="box" id="b703">Bpawn</li>
+            <li class="box" id="b704">Bpawn</li>
+            <li class="box" id="b705">Bpawn</li>
+            <li class="box" id="b706">Bpawn</li>
+            <li class="box" id="b707">Bpawn</li>
+            <li class="box" id="b708">Bpawn</li>
         </div>
-        <div class="ctable" id="r6">
-            <li class = "box" id="r6c1"></li>
-            <li class = "box" id="r6c2"></li>
-            <li class = "box" id="r6c3"></li>
-            <li class = "box" id="r6c4"></li>
-            <li class = "box" id="r6c5"></li>
-            <li class = "box" id="r6c6"></li>
-            <li class = "box" id="r6c7"></li>
-            <li class = "box" id="r6c8"></li>
+        <div class="divv" id="row6">
+            <li class="box" id="b601"></li>
+            <li class="box" id="b602"></li>
+            <li class="box" id="b603"></li>
+            <li class="box" id="b604"></li>
+            <li class="box" id="b605"></li>
+            <li class="box" id="b606"></li>
+            <li class="box" id="b607"></li>
+            <li class="box" id="b608"></li>
         </div>
-        <div class="ctable" id="r5">
-            <li class = "box" id="r5c1"></li>
-            <li class = "box" id="r5c2"></li>
-            <li class = "box" id="r5c3"></li>
-            <li class = "box" id="r5c4"></li>
-            <li class = "box" id="r5c5"></li>
-            <li class = "box" id="r5c6"></li>
-            <li class = "box" id="r5c7"></li>
-            <li class = "box" id="r5c8"></li>
+        <div class="divv" id="row5">
+            <li class="box" id="b501"></li>
+            <li class="box" id="b502"></li>
+            <li class="box" id="b503"></li>
+            <li class="box" id="b504"></li>
+            <li class="box" id="b505"></li>
+            <li class="box" id="b506"></li>
+            <li class="box" id="b507"></li>
+            <li class="box" id="b508"></li>
         </div>
-        <div class="ctable" id="r4">
-            <li class = "box" id="r4c1"></li>
-            <li class = "box" id="r4c2"></li>
-            <li class = "box" id="r4c3"></li>
-            <li class = "box" id="r4c4"></li>
-            <li class = "box" id="r4c5"></li>
-            <li class = "box" id="r4c6"></li>
-            <li class = "box" id="r4c7"></li>
-            <li class = "box" id="r4c8"></li>
+        <div class="divv" id="row4">
+            <li class="box" id="b401"></li>
+            <li class="box" id="b402"></li>
+            <li class="box" id="b403"></li>
+            <li class="box" id="b404"></li>
+            <li class="box" id="b405"></li>
+            <li class="box" id="b406"></li>
+            <li class="box" id="b407"></li>
+            <li class="box" id="b408"></li>
         </div>
-        <div class="ctable" id="r3">
-            <li class = "box" id="r3c1"></li>
-            <li class = "box" id="r3c2"></li>
-            <li class = "box" id="r3c3"></li>
-            <li class = "box" id="r3c4"></li>
-            <li class = "box" id="r3c5"></li>
-            <li class = "box" id="r3c6"></li>
-            <li class = "box" id="r3c7"></li>
-            <li class = "box" id="r3c8"></li>
+        <div class="divv" id="row3">
+            <li class="box" id="b301"></li>
+            <li class="box" id="b302"></li>
+            <li class="box" id="b303"></li>
+            <li class="box" id="b304"></li>
+            <li class="box" id="b305"></li>
+            <li class="box" id="b306"></li>
+            <li class="box" id="b307"></li>
+            <li class="box" id="b308"></li>
         </div>
-        <div class="ctable" id="r2">
-            <li class = "box" id="r2c1">Wpawn</li>
-            <li class = "box" id="r2c2">Wpawn</li>
-            <li class = "box" id="r2c3">Wpawn</li>
-            <li class = "box" id="r2c4">Wpawn</li>
-            <li class = "box" id="r2c5">Wpawn</li>
-            <li class = "box" id="r2c6">Wpawn</li>
-            <li class = "box" id="r2c7">Wpawn</li>
-            <li class = "box" id="r2c8">Wpawn</li>
+
+        <div class="divv" id="row2">
+            <li class="box Wpawn" id="b201">Wpawn</li>
+            <li class="box Wpawn" id="b202">Wpawn</li>
+            <li class="box Wpawn" id="b203">Wpawn</li>
+            <li class="box Wpawn" id="b204">Wpawn</li>
+            <li class="box Wpawn" id="b205">Wpawn</li>
+            <li class="box Wpawn" id="b206">Wpawn</li>
+            <li class="box Wpawn" id="b207">Wpawn</li>
+            <li class="box Wpawn" id="b208">Wpawn</li>
         </div>
-        <div class="ctable" id="r1">
-            <li class = "box" id="r1c1">Wrook</li>
-            <li class = "box" id="r1c2">Wknight</li>
-            <li class = "box" id="r1c3">Wbishop</li>
-            <li class = "box" id="r1c4">Wqueen</li>
-            <li class = "box" id="r1c5">Wking</li>
-            <li class = "box" id="r1c6">Wbishop</li>
-            <li class = "box" id="r1c7">Wknight</li>
-            <li class = "box" id="r1c8">Wrook</li>
+        <div class="divv" id="row1">
+            <li class="box" id="b101">Wrook</li>
+            <li class="box" id="b102">Wknight</li>
+            <li class="box" id="b103">Wbishop</li>
+            <li class="box" id="b104">Wqueen</li>
+            <li class="box" id="b105">Wking</li>
+            <li class="box" id="b106">Wbishop</li>
+            <li class="box" id="b107">Wknight</li>
+            <li class="box" id="b108">Wrook</li>
         </div>
+
     </ul>
-    <script src="chess.js"></script>
+    <script src="Chess.js"></script>
 </body>
+
+<script>
+
+
+   
+</script>
+
 </html>
